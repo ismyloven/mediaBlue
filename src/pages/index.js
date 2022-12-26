@@ -1,5 +1,6 @@
 import { useQuery, gql } from '@apollo/client'
 
+import { Test } from '../components/Test/Test'
 import styles from '../../styles/Home.module.scss'
 
 const QUERY = gql`
@@ -36,6 +37,7 @@ export default function Home() {
           </p>
         </div>
       ))}
+      <Test />
     </div>
   )
 }
