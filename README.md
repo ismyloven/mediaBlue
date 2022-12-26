@@ -2,6 +2,12 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
+First, copy .env.dist data to .env:
+
+```bash
+cp .env.dist .env
+```
+
 First, run the development server:
 
 ```bash
