@@ -1,6 +1,6 @@
 import { useQuery, gql } from '@apollo/client'
+import { Test } from 'components/Test/Test'
 
-import { Test } from '../components/Test/Test'
 import styles from '../../styles/Home.module.scss'
 
 const QUERY = gql`
@@ -21,8 +21,7 @@ export default function Home() {
   }
 
   if (error) {
-    // console.error(error);
-    return null
+    return <div>{error} </div>
   }
 
   const countries = data.countries.slice(0, 4)
