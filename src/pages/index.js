@@ -17,7 +17,7 @@ export default function Home() {
   const { data, loading, error } = useQuery(QUERY)
 
   if (loading) {
-    return <span>{'...Loading'} </span>
+    return <span>{'Loading...'} </span>
   }
 
   if (error) {
